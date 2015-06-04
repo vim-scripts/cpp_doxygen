@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5194
+
+This plugin lets you add a Doxygen comment template with a couple of key strokes. Just position your cursor on the first line of a file, namespace, class, struct, or function; then press <Leader>d. The plugin will deduce what is being commented and insert a Doxygen comment above it, ready for you to fill in. The plugin can deduce template parameters, function parameters, and return types.
+
+The plugin also provides a function you can use to generate fold text for a Javadoc or Qt style Doxygen comment. If you call this function from your own fold text function, Doxygen comments fold up to to the brief description inside comment tokens:
+    /** This a brief description. */
+or
+    /*! This is a brief description. */
+
+For complete details, install the plugin and run :help cpp_doxygen.
+
+For feature requests or bugs, please create an issue at https://github.com/brobeson/Tools/.
+
+I've tested this with Vim 7.4 on Linux (Kubuntu 15.04). Other platforms and versions of Vim should work.
